@@ -35,6 +35,11 @@ while loop:
         print("Installing Nmap...")
         print(" ")
         time.sleep(5)
+        os.system("cd /data/data/com.termux/files/home")
+        os.system("apt update")
+        os.system("apt upgrade")
+        os.system("pkg install nmap")
+        os.system("cd /data/data/com.termux/files/home")
         print(" ")
         print("Nmap sucesfully installed...")
         print(" ")
@@ -320,6 +325,9 @@ while loop:
                 menu()
             else:
                 break
-    elif what == "99":
-        print("Bye.")
+    elif what == "x":
+        os.system("clear")
+        print(" ")
+        print("Exiting...")
+        print(" ")
         break
