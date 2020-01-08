@@ -1,7 +1,7 @@
 import os
 import time
-def menu():
 
+def menu():
     os.system("clear")
     print("""
     
@@ -34,21 +34,18 @@ while loop:
         print(" ")
         print("Installing Nmap...")
         print(" ")
-        time.sleep(5)
+        time.sleep(4)
         os.system("apt update")
         os.system("apt upgrade")
         os.system("git clone https://github.com/nmap/nmap")
         os.system("cd nmap")
-        os.system("./configure")
-        os.system("make")
-        os.system("make install")
         os.system("clear")
         print(" ")
         print("Nmap sucesfully installed...")
         print(" ")
         rmenu = input("Back to Menu? (y/n): ")
         if rmenu == "y":
-            menu()
+            loading()
         else:
             break
     elif what == "2":
