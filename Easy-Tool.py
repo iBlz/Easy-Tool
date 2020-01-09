@@ -173,8 +173,6 @@ while loop:
 [ 2 ] Go to Menu
 [ x ] Exit
 """)
-        os.system("clear")
-        print(" ")
         print(" ")
         rmenu = input(">>")
         if rmenu == "1":
