@@ -63,24 +63,21 @@ while loop:
 
 [ 1 ] Start Kali-Linux
 [ 2 ] Go to Menu
-[ x ] Exit
 """)
         print(" ")
-        rmenu = input(">>")
+        rmenu = input(">> ")
         if rmenu == "1":
             os.system("exit")
+            os.system("clear")
+            print("To exit type exit!!!")
+            time.sleep(2)
+            os.system("clear")
             os.system("./start-kali.sh")
         if rmenu == "2":
             os.system("clear")
             menu()
-        if rmenu == "x":
-            os.system("clear")
-            print(" ")
-            print("Exiting...")
-            print(" ")
-            exit
         else:
-            menu()
+            exit
     elif what == "x":
         os.system("clear")
         print(" ")
