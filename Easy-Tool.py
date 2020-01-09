@@ -3,119 +3,6 @@ import time
 
 def menu():
     os.system("clear")
-    time.sleep(1)
-    print("""
-
-  _                        _  _               
- | |                      | |(_)              
- | |      ___    __ _   __| | _  _ __    __ _ 
- | |     / _ \  / _` | / _` || || '_ \  / _` |
- | |____| (_) || (_| || (_| || || | | || (_| |
- |______|\___/  \__,_| \__,_||_||_| |_| \__, |
-                                         __/ |
-                                        |___/ 
-
-""")
-    time.sleep(1)
-    os.system("clear")
-    print("""
-
-  _                        _  _                   
- | |                      | |(_)                  
- | |      ___    __ _   __| | _  _ __    __ _     
- | |     / _ \  / _` | / _` || || '_ \  / _` |    
- | |____| (_) || (_| || (_| || || | | || (_| |  _ 
- |______|\___/  \__,_| \__,_||_||_| |_| \__, | (_)
-                                         __/ |    
-                                        |___/     
-
-""")
-    time.sleep(1)
-    os.system("clear")
-    print("""
-
-  _                        _  _                      
- | |                      | |(_)                     
- | |      ___    __ _   __| | _  _ __    __ _        
- | |     / _ \  / _` | / _` || || '_ \  / _` |       
- | |____| (_) || (_| || (_| || || | | || (_| |  _  _ 
- |______|\___/  \__,_| \__,_||_||_| |_| \__, | (_)(_)
-                                         __/ |       
-                                        |___/        
-
-""")
-    time.sleep(1)
-    os.system("clear")
-    print("""
-
-  _                        _  _                         
- | |                      | |(_)                        
- | |      ___    __ _   __| | _  _ __    __ _           
- | |     / _ \  / _` | / _` || || '_ \  / _` |          
- | |____| (_) || (_| || (_| || || | | || (_| |  _  _  _ 
- |______|\___/  \__,_| \__,_||_||_| |_| \__, | (_)(_)(_)
-                                         __/ |          
-                                        |___/                
-
-""")
-    os.system("clear")
-    time.sleep(1)
-    print("""
-
-  _                        _  _               
- | |                      | |(_)              
- | |      ___    __ _   __| | _  _ __    __ _ 
- | |     / _ \  / _` | / _` || || '_ \  / _` |
- | |____| (_) || (_| || (_| || || | | || (_| |
- |______|\___/  \__,_| \__,_||_||_| |_| \__, |
-                                         __/ |
-                                        |___/ 
-
-""")
-    time.sleep(1)
-    os.system("clear")
-    print("""
-
-  _                        _  _                   
- | |                      | |(_)                  
- | |      ___    __ _   __| | _  _ __    __ _     
- | |     / _ \  / _` | / _` || || '_ \  / _` |    
- | |____| (_) || (_| || (_| || || | | || (_| |  _ 
- |______|\___/  \__,_| \__,_||_||_| |_| \__, | (_)
-                                         __/ |    
-                                        |___/     
-
-""")
-    time.sleep(1)
-    os.system("clear")
-    print("""
-
-  _                        _  _                      
- | |                      | |(_)                     
- | |      ___    __ _   __| | _  _ __    __ _        
- | |     / _ \  / _` | / _` || || '_ \  / _` |       
- | |____| (_) || (_| || (_| || || | | || (_| |  _  _ 
- |______|\___/  \__,_| \__,_||_||_| |_| \__, | (_)(_)
-                                         __/ |       
-                                        |___/        
-
-""")
-    time.sleep(1)
-    os.system("clear")
-    print("""
-
-  _                        _  _                         
- | |                      | |(_)                        
- | |      ___    __ _   __| | _  _ __    __ _           
- | |     / _ \  / _` | / _` || || '_ \  / _` |          
- | |____| (_) || (_| || (_| || || | | || (_| |  _  _  _ 
- |______|\___/  \__,_| \__,_||_||_| |_| \__, | (_)(_)(_)
-                                         __/ |          
-                                        |___/                
-
-""")
-    time.sleep(2)
-    os.system("clear")
     
     print("""
     
@@ -145,6 +32,10 @@ while loop:
     what = input(">> ")
     if what == "1":
         os.system("clear")
+        os.system("rm -rf kali.sh")
+        os.system("rm -rf start-kali.sh")
+        os.system("rm -rf kali-binds")
+        os.system("rm -rf kali-fs")
         print(" ")
         print("Installing Kali-Linux...")
         print(" ")
@@ -153,6 +44,7 @@ while loop:
         os.system("cd Kali-Linux")
         os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh")
         os.system("cd /data/data/com.termux/files/home/")
+        
         os.system("clear")
         print(" ")
         print("Kali-Linux sucesfully installed...")
@@ -188,7 +80,7 @@ while loop:
             print(" ")
             exit
         else:
-            break
+            exit
     elif what == "x":
         os.system("clear")
         print(" ")
