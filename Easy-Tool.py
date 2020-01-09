@@ -16,7 +16,7 @@ def menu():
                      |___/                         
 
 [ 1 ] Kali-Linux
-[ 2 ] 
+[ 2 ] Ubuntu
 [ 3 ] 
 [ 4 ] 
 [ 6 ] 
@@ -41,7 +41,6 @@ while loop:
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
-        os.system("cd Kali-Linux")
         os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh")
         os.system("cd /data/data/com.termux/files/home/")
         
@@ -69,7 +68,9 @@ while loop:
         if rmenu == "1":
             os.system("exit")
             os.system("clear")
-            print("To exit type exit!!!")
+            print(" ")
+            print("To exit type exit")
+            print(" ")
             time.sleep(2)
             os.system("clear")
             os.system("./start-kali.sh")
@@ -85,3 +86,49 @@ while loop:
         print(" ")
         exit
         break
+    elif what == "2":
+        os.system("clear")
+        print(" ")
+        print("Installing Ubuntu...")
+        print(" ")
+        time.sleep(4)
+        os.system("cd /data/data/com.termux/files/home/")
+        os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh")
+        os.system("cd /data/data/com.termux/files/home/")
+        os.system("clear")
+        print(" ")
+        print("Ubuntu sucesfully installed...")
+        print(" ")
+        time.sleep(3)
+        print("""
+    
+  ______                     _______             _ 
+ |  ____|                   |__   __|           | |
+ | |__    __ _  ___  _   _     | |  ___    ___  | |
+ |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
+ | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
+ |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
+                      __/ |                        
+                     |___/                         
+
+[ 1 ] Start Ubuntu
+[ 2 ] Go to Menu
+""")
+        print(" ")
+        rmenu = input(">> ")
+        if rmenu == "1":
+            os.system("exit")
+            os.system("clear")
+            print(" ")
+            print("To exit type exit")
+            print(" ")
+            time.sleep(2)
+            os.system("clear")
+            os.system("./start-ubuntu.sh")
+        if rmenu == "2":
+            os.system("clear")
+            menu()
+        else:
+            exit
+        
+        
