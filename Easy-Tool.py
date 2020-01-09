@@ -2,7 +2,7 @@ import os
 import time
 
 def menu():
-    mkdir Kali-Linux
+    os.system("mkdir Kali-Linux")
     os.system("clear")
     time.sleep(1)
     print("""
