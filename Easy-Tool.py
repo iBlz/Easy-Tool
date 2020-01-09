@@ -157,7 +157,7 @@ while loop:
         print(" ")
         print("Kali-Linux sucesfully installed...")
         print(" ")
-        time.sleep(2)
+        time.sleep(3)
         print("""
     
   ______                     _______             _ 
@@ -180,10 +180,15 @@ while loop:
         if rmenu == "1":
             os.system("exit")
             os.system("./start-kali.sh")
-        if rmenu == "":
+        if rmenu == "2":
+            os.system("clear")
             menu()
-        if rmenu == "":
-            menu()
+        if rmenu == "x":
+            os.system("clear")
+            print(" ")
+            print("Exiting...")
+            print(" ")
+            exit
         else:
             break
     elif what == "x":
