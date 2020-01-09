@@ -18,7 +18,7 @@ def menu():
 [ 1 ] Kali-Linux
 [ 2 ] Ubuntu
 [ 3 ] Debian
-[ 4 ] 
+[ 4 ] Parrot-OS
 [ 6 ] 
 [ 5 ] 
 [ 7 ] 
@@ -172,6 +172,51 @@ while loop:
             time.sleep(2)
             os.system("clear")
             os.system("./start-debian.sh")
+        if rmenu == "2":
+            os.system("clear")
+            menu()
+        else:
+            exit
+#------------------------------------------------------------------------------
+    elif what == "4":
+        os.system("clear")
+        print(" ")
+        print("Installing Parrot-OS...")
+        print(" ")
+        time.sleep(4)
+        os.system("cd /data/data/com.termux/files/home/")
+        os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Parrot/parrot.sh && bash parrot.sh")
+        os.system("cd /data/data/com.termux/files/home/")
+        os.system("clear")
+        print(" ")
+        print("Parrot-OS sucesfully installed...")
+        print(" ")
+        time.sleep(3)
+        print("""
+    
+  ______                     _______             _ 
+ |  ____|                   |__   __|           | |
+ | |__    __ _  ___  _   _     | |  ___    ___  | |
+ |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
+ | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
+ |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
+                      __/ |                        
+                     |___/                         
+
+[ 1 ] Start Parrot-OS
+[ 2 ] Go to Menu
+""")
+        print(" ")
+        rmenu = input(">> ")
+        if rmenu == "1":
+            os.system("exit")
+            os.system("clear")
+            print(" ")
+            print("To exit type exit")
+            print(" ")
+            time.sleep(2)
+            os.system("clear")
+            os.system("./start-parrot.sh")
         if rmenu == "2":
             os.system("clear")
             menu()
