@@ -2,7 +2,6 @@ import os
 import time
 
 def menu():
-    os.system("mkdir Kali-Linux")
     os.system("clear")
     time.sleep(1)
     print("""
@@ -150,7 +149,7 @@ while loop:
         print("Installing Kali-Linux...")
         print(" ")
         time.sleep(4)
-        os.system("cd /data/data/com.termux/files/home/Kali-Linux")
+        os.system("cd /data/data/com.termux/files/home/")
         os.system("cd Kali-Linux")
         os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh")
         os.system("cd /data/data/com.termux/files/home/")
@@ -158,23 +157,32 @@ while loop:
         print(" ")
         print("Kali-Linux sucesfully installed...")
         print(" ")
-        os.system("clear")
         time.sleep(2)
+        print("""
+    
+  ______                     _______             _ 
+ |  ____|                   |__   __|           | |
+ | |__    __ _  ___  _   _     | |  ___    ___  | |
+ |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
+ | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
+ |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
+                      __/ |                        
+                     |___/                         
+
+[ 1 ] Start Kali-Linux
+[ 2 ] Go to Menu
+[ x ] Exit
+""")
+        os.system("clear")
         print(" ")
-        print(" To start/exit Kali-Linux follow steps..")
         print(" ")
-        print(" ****************")
-        print(" Start Kali-Linux")
-        print(" ****************")
-        print(" 1. Exit Easy-Tool")
-        print(" 2. Type cd Kali-Linux && ./start-kali.sh")
-        print(" ****************")
-        print(" Exit Kali-Linux")
-        print(" ****************")
-        print(" 1. To exit type exit")
-        print(" ")
-        rmenu = input("Back to Menu? (y/n): ")
-        if rmenu == "y":
+        rmenu = input(">>")
+        if rmenu == "1":
+            os.system("exit")
+            os.system("./start-kali.sh")
+        if rmenu == "":
+            menu()
+        if rmenu == "":
             menu()
         else:
             break
