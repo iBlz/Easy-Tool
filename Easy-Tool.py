@@ -153,7 +153,7 @@ while loop:
         os.system("mkdir Kali-Linux")
         os.system("cd /data/data/com.termux/files/home/Kali-Linux")
         os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh")
-        os.system("cd /data/data/com.termux/files/home/Easy-Tool")
+        os.system("cd /data/data/com.termux/files/home/Kali-Linux")
         os.system("clear")
         print(" ")
         print("Kali-Linux sucesfully installed...")
