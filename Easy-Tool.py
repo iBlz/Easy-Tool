@@ -17,7 +17,7 @@ def menu():
 
 [ 1 ] Kali-Linux
 [ 2 ] Ubuntu
-[ 3 ] 
+[ 3 ] Debian
 [ 4 ] 
 [ 6 ] 
 [ 5 ] 
@@ -30,6 +30,7 @@ loop = True
 while loop:
     menu()
     what = input(">> ")
+#------------------------------------------------------------------------------
     if what == "1":
         os.system("clear")
         os.system("rm -rf kali.sh")
@@ -86,6 +87,7 @@ while loop:
         print(" ")
         exit
         break
+#------------------------------------------------------------------------------
     elif what == "2":
         os.system("clear")
         print(" ")
@@ -130,5 +132,51 @@ while loop:
             menu()
         else:
             exit
+#------------------------------------------------------------------------------
+    elif what == "3":
+        os.system("clear")
+        print(" ")
+        print("Installing Debian...")
+        print(" ")
+        time.sleep(4)
+        os.system("cd /data/data/com.termux/files/home/")
+        os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Debian/debian.sh && bash debian.sh")
+        os.system("cd /data/data/com.termux/files/home/")
+        os.system("clear")
+        print(" ")
+        print("Debian sucesfully installed...")
+        print(" ")
+        time.sleep(3)
+        print("""
+    
+  ______                     _______             _ 
+ |  ____|                   |__   __|           | |
+ | |__    __ _  ___  _   _     | |  ___    ___  | |
+ |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
+ | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
+ |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
+                      __/ |                        
+                     |___/                         
+
+[ 1 ] Start Debian
+[ 2 ] Go to Menu
+""")
+        print(" ")
+        rmenu = input(">> ")
+        if rmenu == "1":
+            os.system("exit")
+            os.system("clear")
+            print(" ")
+            print("To exit type exit")
+            print(" ")
+            time.sleep(2)
+            os.system("clear")
+            os.system("./start-debian.sh")
+        if rmenu == "2":
+            os.system("clear")
+            menu()
+        else:
+            exit
+#------------------------------------------------------------------------------
         
         
