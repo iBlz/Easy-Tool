@@ -2,7 +2,7 @@ import os
 import time
 
 def menu():
-
+    mkdir Kali-Linux
     os.system("clear")
     time.sleep(1)
     print("""
@@ -150,7 +150,7 @@ while loop:
         print("Installing Kali-Linux...")
         print(" ")
         time.sleep(4)
-        os.system("mkdir Kali-Linux")
+        os.system("cd /data/data/com.termux/files/home/Kali-Linux")
         os.system("cd Kali-Linux")
         os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh")
         os.system("cd /data/data/com.termux/files/home/")
