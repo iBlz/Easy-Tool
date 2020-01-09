@@ -80,7 +80,7 @@ while loop:
             print(" ")
             exit
         else:
-            exit
+            menu()
     elif what == "x":
         os.system("clear")
         print(" ")
