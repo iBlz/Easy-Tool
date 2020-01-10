@@ -32,11 +32,30 @@ while loop:
     what = input(">> ")
 #------------------------------------------------------------------------------
     if what == "1":
-        os.system("clear")
-        os.system("rm -rf kali.sh")
-        os.system("rm -rf start-kali.sh")
-        os.system("rm -rf kali-binds")
-        os.system("rm -rf kali-fs")
+        print("""
+    
+  ______                     _______             _ 
+ |  ____|                   |__   __|           | |
+ | |__    __ _  ___  _   _     | |  ___    ___  | |
+ |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
+ | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
+ |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
+                      __/ |                        
+                     |___/                         
+
+[ 1 ] Install Kali-Linux
+[ 2 ] Start Kali-Linux
+""")
+        print(" ")
+        rmenu = input(">> ")
+        if rmenu == "1":
+            os.system("clear")
+        if rmenu == "2":
+            os.system("clear")
+            os.system("./start-kali.sh")
+            menu()
+        else:
+            exit
         print(" ")
         print("Installing Kali-Linux...")
         print(" ")
@@ -44,7 +63,6 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh")
         os.system("cd /data/data/com.termux/files/home/")
-        
         os.system("clear")
         print(" ")
         print("Kali-Linux sucesfully installed...")
@@ -90,10 +108,6 @@ while loop:
 #------------------------------------------------------------------------------
     elif what == "2":
         os.system("clear")
-        os.system("rm -rf start-ubuntu.sh")
-        os.system("rm -rf ubuntu-binds")
-        os.system("rm -rf ubuntu-fs")
-        os.system("rm -rf ubuntu.sh")
         print(" ")
         print("Installing Ubuntu...")
         print(" ")
@@ -139,10 +153,6 @@ while loop:
 #------------------------------------------------------------------------------
     elif what == "3":
         os.system("clear")
-        os.system("rm -rf start-debian.sh")
-        os.system("rm -rf debian-binds")
-        os.system("rm -rf debian-fs")
-        os.system("rm -rf debian.sh")
         print(" ")
         print("Installing Debian...")
         print(" ")
@@ -188,10 +198,6 @@ while loop:
 #------------------------------------------------------------------------------
     elif what == "4":
         os.system("clear")
-        os.system("rm -rf start-parrot.sh")
-        os.system("rm -rf parrot-binds")
-        os.system("rm -rf parrot-fs")
-        os.system("rm -rf parrot.sh")
         print(" ")
         print("Installing Parrot-OS...")
         print(" ")
@@ -237,10 +243,6 @@ while loop:
 #------------------------------------------------------------------------------
     elif what == "5":
         os.system("clear")
-        os.system("rm -rf opensuse-leap-binds")
-        os.system("rm -rf opensuse-leap-fs")
-        os.system("rm -rf opensuse-leap.sh")
-        os.system("rm -rf start-leap.sh")
         print(" ")
         print("Installing Leap...")
         print(" ")
@@ -286,7 +288,6 @@ while loop:
 #------------------------------------------------------------------------------
     elif what == "6":
         os.system("clear")
-        os.system("./start-tumbleweed.sh")
         print(" ")
         print("Installing Tumbleweed...")
         print(" ")
