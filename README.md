@@ -1,12 +1,12 @@
 # Easy-Tool
 __________________________________________________________
-How to install
+---How to install---
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. pkg install git
+2. apt install python
+3. git clone https://github.com/Toxic-Omega/Easy-Tool
+4. cd Easy-Tool
+5. python Easy-Tool.py
 __________________________________________________________
 <br>
 <p align="center">
