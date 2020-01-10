@@ -286,10 +286,7 @@ while loop:
 #------------------------------------------------------------------------------
     elif what == "6":
         os.system("clear")
-        os.system("rm -rf opensuse-tumbleweed-binds")
-        os.system("rm -rf opensuse-tumbleweed-fs")
-        os.system("rm -rf opensuse-tumbleweed.sh")
-        os.system("rm -rf start-tumbleweed.sh")
+        os.system("./start-tumbleweed.sh")
         print(" ")
         print("Installing Tumbleweed...")
         print(" ")
