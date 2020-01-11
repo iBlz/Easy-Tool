@@ -289,8 +289,54 @@ while loop:
     elif what == "11":
         os.system("clear")
         print(" ")
-        print("Starting Kali-Linux..")
+        print("Starting Kali-Linux...")
         print(" ")
         time.sleep(3)
         os.system("clear")
         os.system("./start-kali.sh")
+#------------------------------------------------------------------------------
+    elif what == "22":
+        os.system("clear")
+        print(" ")
+        print("Starting Ubuntu...")
+        print(" ")
+        time.sleep(3)
+        os.system("clear")
+        os.system("./start-ubuntu.sh")
+#------------------------------------------------------------------------------
+    elif what == "33":
+        os.system("clear")
+        print(" ")
+        print("Starting Debian...")
+        print(" ")
+        time.sleep(3)
+        os.system("clear")
+        os.system("./start-debian.sh")
+#------------------------------------------------------------------------------
+    elif what == "44":
+        os.system("clear")
+        print(" ")
+        print("Starting Parrot...")
+        print(" ")
+        time.sleep(3)
+        os.system("clear")
+        os.system("./start-parrot.sh")
+#------------------------------------------------------------------------------
+    elif what == "55":
+        os.system("clear")
+        print(" ")
+        print("Starting Leap...")
+        print(" ")
+        time.sleep(3)
+        os.system("clear")
+        os.system("./start-leap.sh")
+#------------------------------------------------------------------------------
+    elif what == "66":
+        os.system("clear")
+        print(" ")
+        print("Starting Tumbleweed...")
+        print(" ")
+        time.sleep(3)
+        os.system("clear")
+        os.system("./start-tumbleweed.sh")
+#------------------------------------------------------------------------------
