@@ -14,6 +14,7 @@ def menu():
  |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
                       __/ |                        
                      |___/                         
+[ 00 ] Install All
 
 [ 1 ] Install Kali-Linux       [ 11 ] Start Kali-Linux
 [ 2 ] Install Ubuntu           [ 22 ] Start Ubuntu
@@ -340,3 +341,27 @@ while loop:
         os.system("clear")
         os.system("./start-tumbleweed.sh")
 #------------------------------------------------------------------------------
+    elif what == "00":
+        os.system("clear")
+        print(" ")
+        print("Are you sure you want to install all?  (y/n)")
+        print(" ")
+        rmenu = input(">> ")
+        if rmenu == "y":
+            os.system("clear")
+            print(" ")
+            print("This will take long time...")
+            print(" ")
+            time.sleep(3)
+            os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh")
+            os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh")
+            os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Debian/debian.sh && bash debian.sh")
+            os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Parrot/parrot.sh && bash parrot.sh")
+            os.system("pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/openSUSE/Leap/opensuse-leap.sh && bash opensuse-leap.sh")
+            os.system("pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/openSUSE/Tumbleweed/opensuse-tumbleweed.sh && bash opensuse-tumbleweed.sh")
+            exit
+        if rmenu == "2":
+            os.system("clear")
+            exit
+        else:
+            exit
