@@ -15,15 +15,13 @@ def menu():
                       __/ |                        
                      |___/                         
 
-[ 1 ] Kali-Linux
-[ 2 ] Ubuntu
-[ 3 ] Debian
-[ 4 ] Parrot-OS
-[ 5 ] Leap
-[ 6 ] Tumbleweed
-[ 7 ] 
-[ 8 ] 
-[ 9 ] 
+[ 1 ] Install Kali-Linux       [ 11 ] Start Kali-Linux
+[ 2 ] Install Ubuntu           [ 22 ] Start Ubuntu
+[ 3 ] Install Debian           [ 33 ] Start Debian
+[ 4 ] Install Parrot-OS        [ 44 ] Start Parrot-OS
+[ 5 ] Install Leap             [ 55 ] Start Leap
+[ 6 ] Install Tumbleweed       [ 66 ] Start Tumbleweed
+
 [ x ] Exit
 """)
 loop = True
@@ -32,30 +30,7 @@ while loop:
     what = input(">> ")
 #------------------------------------------------------------------------------
     if what == "1":
-        print("""
-    
-  ______                     _______             _ 
- |  ____|                   |__   __|           | |
- | |__    __ _  ___  _   _     | |  ___    ___  | |
- |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
- | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
- |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
-                      __/ |                        
-                     |___/                         
-
-[ 1 ] Install Kali-Linux
-[ 2 ] Start Kali-Linux
-""")
-        print(" ")
-        rmenu = input(">> ")
-        if rmenu == "1":
-            os.system("clear")
-        if rmenu == "2":
-            os.system("clear")
-            os.system("./start-kali.sh")
-            menu()
-        else:
-            exit
+        os.system("clear")
         print(" ")
         print("Installing Kali-Linux...")
         print(" ")
@@ -67,7 +42,6 @@ while loop:
         print(" ")
         print("Kali-Linux sucesfully installed...")
         print(" ")
-        time.sleep(3)
         print("""
     
   ______                     _______             _ 
@@ -87,9 +61,6 @@ while loop:
         if rmenu == "1":
             os.system("exit")
             os.system("clear")
-            print(" ")
-            print("To exit type exit")
-            print(" ")
             time.sleep(2)
             os.system("clear")
             os.system("./start-kali.sh")
@@ -139,9 +110,6 @@ while loop:
         if rmenu == "1":
             os.system("exit")
             os.system("clear")
-            print(" ")
-            print("To exit type exit")
-            print(" ")
             time.sleep(2)
             os.system("clear")
             os.system("./start-ubuntu.sh")
@@ -184,9 +152,6 @@ while loop:
         if rmenu == "1":
             os.system("exit")
             os.system("clear")
-            print(" ")
-            print("To exit type exit")
-            print(" ")
             time.sleep(2)
             os.system("clear")
             os.system("./start-debian.sh")
@@ -229,9 +194,6 @@ while loop:
         if rmenu == "1":
             os.system("exit")
             os.system("clear")
-            print(" ")
-            print("To exit type exit")
-            print(" ")
             time.sleep(2)
             os.system("clear")
             os.system("./start-parrot.sh")
@@ -274,9 +236,6 @@ while loop:
         if rmenu == "1":
             os.system("exit")
             os.system("clear")
-            print(" ")
-            print("To exit type exit")
-            print(" ")
             time.sleep(2)
             os.system("clear")
             os.system("./start-leap.sh")
@@ -318,10 +277,6 @@ while loop:
         rmenu = input(">> ")
         if rmenu == "1":
             os.system("exit")
-            os.system("clear")
-            print(" ")
-            print("To exit type exit")
-            print(" ")
             time.sleep(2)
             os.system("clear")
             os.system("./start-tumbleweed.sh")
@@ -331,4 +286,11 @@ while loop:
         else:
             exit
 #------------------------------------------------------------------------------
-        
+    elif what == "11":
+        os.system("clear")
+        print(" ")
+        print("Starting Kali-Linux..")
+        print(" ")
+        time.sleep(3)
+        os.system("clear")
+        os.system("./start-kali.sh")
