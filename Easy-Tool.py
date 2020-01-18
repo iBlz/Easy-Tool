@@ -5,7 +5,7 @@ def menu():
     os.system("clear")
     
     print("""\033[92m
-    
+
   ______                     _______             _ 
  |  ____|                   |__   __|           | |
  | |__    __ _  ___  _   _     | |  ___    ___  | |
@@ -91,7 +91,7 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("Ubuntu sucesfully installed...")
+        print("\033[92mUbuntu sucesfully installed...")
         print(" ")
         time.sleep(3)
         print("""\033[92m
@@ -134,7 +134,7 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("Debian sucesfully installed...")
+        print("\033[92mDebian sucesfully installed...")
         print(" ")
         time.sleep(3)
         print("""\033[92m
@@ -177,7 +177,7 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("Parrot-OS sucesfully installed...")
+        print("\033[92mParrot-OS sucesfully installed...")
         print(" ")
         time.sleep(3)
         print("""\033[92m
@@ -220,7 +220,7 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("Leap sucesfully installed...")
+        print("\033[92mLeap sucesfully installed...")
         print(" ")
         time.sleep(3)
         print("""\033[92m
@@ -263,7 +263,7 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("Tumbleweed sucesfully installed...")
+        print("\033[92mTumbleweed sucesfully installed...")
         print(" ")
         time.sleep(3)
         print("""\033[92m
