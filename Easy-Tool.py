@@ -4,7 +4,7 @@ import time
 def menu():
     os.system("clear")
     
-    print("""
+    print("""\033[92m
     
   ______                     _______             _ 
  |  ____|                   |__   __|           | |
@@ -14,16 +14,17 @@ def menu():
  |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
                       __/ |                        
                      |___/                         
-[ 00 ] Install All
+\033[93m[ \033[94m00 \033[93m] Install All
 
-[ 1 ] Install Kali-Linux       [ 11 ] Start Kali-Linux
-[ 2 ] Install Ubuntu           [ 22 ] Start Ubuntu
-[ 3 ] Install Debian           [ 33 ] Start Debian
-[ 4 ] Install Parrot-OS        [ 44 ] Start Parrot-OS
-[ 5 ] Install Leap             [ 55 ] Start Leap
-[ 6 ] Install Tumbleweed       [ 66 ] Start Tumbleweed
+\033[93m[ \033[94m1 \033[93m] Install Kali-Linux       \033[93m[ \033[94m11 \033[93m] Start Kali-Linux
+\033[93m[ \033[94m2 \033[93m] Install Ubuntu           \033[93m[ \033[94m22 \033[93m] Start Ubuntu
+\033[93m[ \033[94m3 \033[93m] Install Debian           \033[93m[ \033[94m33 \033[93m] Start Debian
+\033[93m[ \033[94m4 \033[93m] Install Parrot-OS        \033[93m[ \033[94m44 \033[93m] Start Parrot-OS
+\033[93m[ \033[94m5 \033[93m] Install Leap             \033[93m[ \033[94m55 \033[93m] Start Leap
+\033[93m[ \033[94m6 \033[93m] Install Tumbleweed       \033[93m[ \033[94m66 \033[93m] Start Tumbleweed
 
-[ x ] Exit
+\033[93m[ \033[94mx \033[93m] Exit
+\033[91m
 """)
 loop = True
 while loop:
@@ -33,7 +34,7 @@ while loop:
     if what == "1":
         os.system("clear")
         print(" ")
-        print("Installing Kali-Linux...")
+        print("\033[92mInstalling Kali-Linux...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -43,7 +44,7 @@ while loop:
         print(" ")
         print("Kali-Linux sucesfully installed...")
         print(" ")
-        print("""
+        print("""\033[92m
     
   ______                     _______             _ 
  |  ____|                   |__   __|           | |
@@ -54,8 +55,9 @@ while loop:
                       __/ |                        
                      |___/                         
 
-[ 1 ] Start Kali-Linux
-[ 2 ] Go to Menu
+\033[93m[ \033[94m1 \033[93m] Start Kali-Linux
+\033[93m[ \033[94m2 \033[93m] Go to Menu
+\033[91m
 """)
         print(" ")
         rmenu = input(">> ")
@@ -81,7 +83,7 @@ while loop:
     elif what == "2":
         os.system("clear")
         print(" ")
-        print("Installing Ubuntu...")
+        print("\033[92mInstalling Ubuntu...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -92,7 +94,7 @@ while loop:
         print("Ubuntu sucesfully installed...")
         print(" ")
         time.sleep(3)
-        print("""
+        print("""\033[92m
     
   ______                     _______             _ 
  |  ____|                   |__   __|           | |
@@ -103,8 +105,9 @@ while loop:
                       __/ |                        
                      |___/                         
 
-[ 1 ] Start Ubuntu
-[ 2 ] Go to Menu
+\033[93m[ \033[94m1 \033[93m] Start Ubuntu
+\033[93m[ \033[94m2 \033[93m] Go to Menu
+\033[91m
 """)
         print(" ")
         rmenu = input(">> ")
@@ -123,7 +126,7 @@ while loop:
     elif what == "3":
         os.system("clear")
         print(" ")
-        print("Installing Debian...")
+        print("\033[92mInstalling Debian...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -134,7 +137,7 @@ while loop:
         print("Debian sucesfully installed...")
         print(" ")
         time.sleep(3)
-        print("""
+        print("""\033[92m
     
   ______                     _______             _ 
  |  ____|                   |__   __|           | |
@@ -145,8 +148,9 @@ while loop:
                       __/ |                        
                      |___/                         
 
-[ 1 ] Start Debian
-[ 2 ] Go to Menu
+\033[93m[ \033[94m1 \033[93m] Start Debian
+\033[93m[ \033[94m2 \033[93m] Go to Menu
+\033[91m
 """)
         print(" ")
         rmenu = input(">> ")
@@ -165,7 +169,7 @@ while loop:
     elif what == "4":
         os.system("clear")
         print(" ")
-        print("Installing Parrot-OS...")
+        print("\033[92mInstalling Parrot-OS...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -176,7 +180,7 @@ while loop:
         print("Parrot-OS sucesfully installed...")
         print(" ")
         time.sleep(3)
-        print("""
+        print("""\033[92m
     
   ______                     _______             _ 
  |  ____|                   |__   __|           | |
@@ -187,8 +191,9 @@ while loop:
                       __/ |                        
                      |___/                         
 
-[ 1 ] Start Parrot-OS
-[ 2 ] Go to Menu
+\033[93m[ \033[94m1 \033[93m] Start Parrot-OS
+\033[93m[ \033[94m2 \033[93m] Go to Menu
+\033[91m
 """)
         print(" ")
         rmenu = input(">> ")
@@ -207,7 +212,7 @@ while loop:
     elif what == "5":
         os.system("clear")
         print(" ")
-        print("Installing Leap...")
+        print("\033[92mInstalling Leap...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -218,7 +223,7 @@ while loop:
         print("Leap sucesfully installed...")
         print(" ")
         time.sleep(3)
-        print("""
+        print("""\033[92m
     
   ______                     _______             _ 
  |  ____|                   |__   __|           | |
@@ -229,8 +234,9 @@ while loop:
                       __/ |                        
                      |___/                         
 
-[ 1 ] Start Leap
-[ 2 ] Go to Menu
+\033[93m[ \033[94m1 \033[93m] Start Leap
+\033[93m[ \033[94m2 \033[93m] Go to Menu
+\033[91m
 """)
         print(" ")
         rmenu = input(">> ")
@@ -249,7 +255,7 @@ while loop:
     elif what == "6":
         os.system("clear")
         print(" ")
-        print("Installing Tumbleweed...")
+        print("\033[92mInstalling Tumbleweed...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -260,7 +266,7 @@ while loop:
         print("Tumbleweed sucesfully installed...")
         print(" ")
         time.sleep(3)
-        print("""
+        print("""\033[92m
     
   ______                     _______             _ 
  |  ____|                   |__   __|           | |
@@ -271,8 +277,9 @@ while loop:
                       __/ |                        
                      |___/                         
 
-[ 1 ] Start Tumbleweed
-[ 2 ] Go to Menu
+\033[93m[ \033[94m1 \033[93m] Start Tumbleweed
+\033[93m[ \033[94m2 \033[93m] Go to Menu
+\033[91m
 """)
         print(" ")
         rmenu = input(">> ")
@@ -290,7 +297,7 @@ while loop:
     elif what == "11":
         os.system("clear")
         print(" ")
-        print("Starting Kali-Linux...")
+        print("\033[92mStarting Kali-Linux...")
         print(" ")
         time.sleep(3)
         os.system("clear")
@@ -299,7 +306,7 @@ while loop:
     elif what == "22":
         os.system("clear")
         print(" ")
-        print("Starting Ubuntu...")
+        print("\033[92mStarting Ubuntu...")
         print(" ")
         time.sleep(3)
         os.system("clear")
@@ -308,7 +315,7 @@ while loop:
     elif what == "33":
         os.system("clear")
         print(" ")
-        print("Starting Debian...")
+        print("\033[92mStarting Debian...")
         print(" ")
         time.sleep(3)
         os.system("clear")
@@ -317,7 +324,7 @@ while loop:
     elif what == "44":
         os.system("clear")
         print(" ")
-        print("Starting Parrot...")
+        print("\033[92mStarting Parrot...")
         print(" ")
         time.sleep(3)
         os.system("clear")
@@ -326,7 +333,7 @@ while loop:
     elif what == "55":
         os.system("clear")
         print(" ")
-        print("Starting Leap...")
+        print("\033[92mStarting Leap...")
         print(" ")
         time.sleep(3)
         os.system("clear")
@@ -335,7 +342,7 @@ while loop:
     elif what == "66":
         os.system("clear")
         print(" ")
-        print("Starting Tumbleweed...")
+        print("\033[92mStarting Tumbleweed...")
         print(" ")
         time.sleep(3)
         os.system("clear")
@@ -344,13 +351,13 @@ while loop:
     elif what == "00":
         os.system("clear")
         print(" ")
-        print("Are you sure you want to install all?  (y/n)")
+        print("\033[91mAre you sure you want to install all?  (y/n)")
         print(" ")
         rmenu = input(">> ")
         if rmenu == "y":
             os.system("clear")
             print(" ")
-            print("This will take long time...")
+            print("\033[92mThis will take long time...")
             print(" ")
             time.sleep(3)
             os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh")
