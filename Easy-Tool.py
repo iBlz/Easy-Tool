@@ -4,27 +4,27 @@ import time
 def menu():
     os.system("clear")
     
-    print("""\033[92m
+    print("""\033[31m
 
-  ______                     _______             _ 
- |  ____|                   |__   __|           | |
- | |__    __ _  ___  _   _     | |  ___    ___  | |
- |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
- | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
- |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
-                      __/ |                        
-                     |___/                         
-\033[93m[ \033[94m00 \033[93m] Install All
+    ______                             ______            __
+   / ____/___ ________  __            /_  __/___  ____  / /
+  / __/ / __ `/ ___/ / / /  ______     / / / __ \/ __ \/ / 
+ / /___/ /_/ (__  ) /_/ /  /_____/    / / / /_/ / /_/ / /  
+/_____/\__,_/____/\__, /             /_/  \____/\____/_/   
+                 /____/                                    
 
-\033[93m[ \033[94m1 \033[93m] Install Kali-Linux       \033[93m[ \033[94m11 \033[93m] Start Kali-Linux
-\033[93m[ \033[94m2 \033[93m] Install Ubuntu           \033[93m[ \033[94m22 \033[93m] Start Ubuntu
-\033[93m[ \033[94m3 \033[93m] Install Debian           \033[93m[ \033[94m33 \033[93m] Start Debian
-\033[93m[ \033[94m4 \033[93m] Install Parrot-OS        \033[93m[ \033[94m44 \033[93m] Start Parrot-OS
-\033[93m[ \033[94m5 \033[93m] Install Leap             \033[93m[ \033[94m55 \033[93m] Start Leap
-\033[93m[ \033[94m6 \033[93m] Install Tumbleweed       \033[93m[ \033[94m66 \033[93m] Start Tumbleweed
+                   \033[94mCreated By Toxic-Omega
 
-\033[93m[ \033[94mx \033[93m] Exit
-\033[91m
+\033[32m[ \033[31m0 \033[32m] Install All
+
+\033[32m[ \033[31m1 \033[32m] Install Kali-Linux       \033[32m[ \033[31m11 \033[32m] Start Kali-Linux
+\033[32m[ \033[31m2 \033[32m] Install Ubuntu           \033[32m[ \033[31m22 \033[32m] Start Ubuntu
+\033[32m[ \033[31m3 \033[32m] Install Debian           \033[32m[ \033[31m33 \033[32m] Start Debian
+\033[32m[ \033[31m4 \033[32m] Install Parrot-OS        \033[32m[ \033[31m44 \033[32m] Start Parrot-OS
+\033[32m[ \033[31m5 \033[32m] Install Leap             \033[32m[ \033[31m55 \033[32m] Start Leap
+\033[32m[ \033[31m6 \033[32m] Install Tumbleweed       \033[32m[ \033[31m66 \033[32m] Start Tumbleweed
+
+\033[32m[ \033[31mx \033[32m] Exit
 """)
 loop = True
 while loop:
@@ -34,7 +34,7 @@ while loop:
     if what == "1":
         os.system("clear")
         print(" ")
-        print("\033[92mInstalling Kali-Linux...")
+        print("\033[32m[\033[31m*\033[32m] Installing Kali-Linux...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -42,22 +42,21 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("Kali-Linux sucesfully installed...")
+        print("\033[32m[\033[31m*\033[32m] Kali-Linux sucesfully installed...")
         print(" ")
-        print("""\033[92m
-    
-  ______                     _______             _ 
- |  ____|                   |__   __|           | |
- | |__    __ _  ___  _   _     | |  ___    ___  | |
- |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
- | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
- |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
-                      __/ |                        
-                     |___/                         
+        print("""\033[31m
 
-\033[93m[ \033[94m1 \033[93m] Start Kali-Linux
-\033[93m[ \033[94m2 \033[93m] Go to Menu
-\033[91m
+    ______                             ______            __
+   / ____/___ ________  __            /_  __/___  ____  / /
+  / __/ / __ `/ ___/ / / /  ______     / / / __ \/ __ \/ / 
+ / /___/ /_/ (__  ) /_/ /  /_____/    / / / /_/ / /_/ / /  
+/_____/\__,_/____/\__, /             /_/  \____/\____/_/   
+                 /____/                                    
+                 
+                   \033[94mCreated By Toxic-Omega
+
+\033[32m[ \033[31m1 \033[32m] Start Kali-Linux
+\033[32m[ \033[31m2 \033[32m] Go to Menu
 """)
         print(" ")
         rmenu = input(">> ")
@@ -65,6 +64,7 @@ while loop:
             os.system("exit")
             os.system("clear")
             time.sleep(2)
+            os.system("ls")
             os.system("clear")
             os.system("./start-kali.sh")
         if rmenu == "2":
@@ -72,18 +72,11 @@ while loop:
             menu()
         else:
             exit
-    elif what == "x":
-        os.system("clear")
-        print(" ")
-        print("Exiting...")
-        print(" ")
-        exit
-        break
 #------------------------------------------------------------------------------
     elif what == "2":
         os.system("clear")
         print(" ")
-        print("\033[92mInstalling Ubuntu...")
+        print("\033[32m[\033[31m*\033[32m] Installing Ubuntu...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -91,23 +84,22 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("\033[92mUbuntu sucesfully installed...")
+        print("\033[32m[\033[31m*\033[32m] Ubuntu sucesfully installed...")
         print(" ")
         time.sleep(3)
-        print("""\033[92m
-    
-  ______                     _______             _ 
- |  ____|                   |__   __|           | |
- | |__    __ _  ___  _   _     | |  ___    ___  | |
- |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
- | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
- |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
-                      __/ |                        
-                     |___/                         
+        print("""\033[31m
+        
+    ______                             ______            __
+   / ____/___ ________  __            /_  __/___  ____  / /
+  / __/ / __ `/ ___/ / / /  ______     / / / __ \/ __ \/ / 
+ / /___/ /_/ (__  ) /_/ /  /_____/    / / / /_/ / /_/ / /  
+/_____/\__,_/____/\__, /             /_/  \____/\____/_/   
+                 /____/                                    
+                 
+                   \033[94mCreated By Toxic-Omega
 
-\033[93m[ \033[94m1 \033[93m] Start Ubuntu
-\033[93m[ \033[94m2 \033[93m] Go to Menu
-\033[91m
+\033[32m[ \033[31m1 \033[32m] Start Ubuntu
+\033[32m[ \033[31m2 \033[32m] Go to Menu
 """)
         print(" ")
         rmenu = input(">> ")
@@ -115,6 +107,7 @@ while loop:
             os.system("exit")
             os.system("clear")
             time.sleep(2)
+            os.system("ls")
             os.system("clear")
             os.system("./start-ubuntu.sh")
         if rmenu == "2":
@@ -126,7 +119,7 @@ while loop:
     elif what == "3":
         os.system("clear")
         print(" ")
-        print("\033[92mInstalling Debian...")
+        print("\033[32m[\033[31m*\033[32m] Installing Debian...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -134,23 +127,22 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("\033[92mDebian sucesfully installed...")
+        print("\033[32m[\033[31m*\033[32m] Debian sucesfully installed...")
         print(" ")
         time.sleep(3)
-        print("""\033[92m
-    
-  ______                     _______             _ 
- |  ____|                   |__   __|           | |
- | |__    __ _  ___  _   _     | |  ___    ___  | |
- |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
- | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
- |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
-                      __/ |                        
-                     |___/                         
+        print("""\033[31m
+        
+    ______                             ______            __
+   / ____/___ ________  __            /_  __/___  ____  / /
+  / __/ / __ `/ ___/ / / /  ______     / / / __ \/ __ \/ / 
+ / /___/ /_/ (__  ) /_/ /  /_____/    / / / /_/ / /_/ / /  
+/_____/\__,_/____/\__, /             /_/  \____/\____/_/   
+                 /____/                                     
+        
+                   \033[94mCreated By Toxic-Omega
 
-\033[93m[ \033[94m1 \033[93m] Start Debian
-\033[93m[ \033[94m2 \033[93m] Go to Menu
-\033[91m
+\033[32m[ \033[31m1 \033[32m] Start Debian
+\033[32m[ \033[31m2 \033[32m] Go to Menu
 """)
         print(" ")
         rmenu = input(">> ")
@@ -158,6 +150,7 @@ while loop:
             os.system("exit")
             os.system("clear")
             time.sleep(2)
+            os.system("ls")
             os.system("clear")
             os.system("./start-debian.sh")
         if rmenu == "2":
@@ -169,7 +162,7 @@ while loop:
     elif what == "4":
         os.system("clear")
         print(" ")
-        print("\033[92mInstalling Parrot-OS...")
+        print("\033[32m[\033[31m*\033[32m] Installing Parrot-OS...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -177,23 +170,22 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("\033[92mParrot-OS sucesfully installed...")
+        print("\033[32m[\033[31m*\033[32m] Parrot-OS sucesfully installed...")
         print(" ")
         time.sleep(3)
-        print("""\033[92m
+        print("""\033[31m
     
-  ______                     _______             _ 
- |  ____|                   |__   __|           | |
- | |__    __ _  ___  _   _     | |  ___    ___  | |
- |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
- | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
- |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
-                      __/ |                        
-                     |___/                         
+    ______                             ______            __
+   / ____/___ ________  __            /_  __/___  ____  / /
+  / __/ / __ `/ ___/ / / /  ______     / / / __ \/ __ \/ / 
+ / /___/ /_/ (__  ) /_/ /  /_____/    / / / /_/ / /_/ / /  
+/_____/\__,_/____/\__, /             /_/  \____/\____/_/   
+                 /____/                                    
 
-\033[93m[ \033[94m1 \033[93m] Start Parrot-OS
-\033[93m[ \033[94m2 \033[93m] Go to Menu
-\033[91m
+                   \033[94mCreated By Toxic-Omega
+
+\033[32m[ \033[31m1 \033[32m] Start Parrot-OS
+\033[32m[ \033[31m2 \033[32m] Go to Menu
 """)
         print(" ")
         rmenu = input(">> ")
@@ -201,6 +193,7 @@ while loop:
             os.system("exit")
             os.system("clear")
             time.sleep(2)
+            os.system("ls")
             os.system("clear")
             os.system("./start-parrot.sh")
         if rmenu == "2":
@@ -212,7 +205,7 @@ while loop:
     elif what == "5":
         os.system("clear")
         print(" ")
-        print("\033[92mInstalling Leap...")
+        print("\033[32m[\033[31m*\033[32m] Installing Leap...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -220,23 +213,22 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("\033[92mLeap sucesfully installed...")
+        print("\033[32m[\033[31m*\033[32m] Leap sucesfully installed...")
         print(" ")
         time.sleep(3)
-        print("""\033[92m
+        print("""\033[31m
     
-  ______                     _______             _ 
- |  ____|                   |__   __|           | |
- | |__    __ _  ___  _   _     | |  ___    ___  | |
- |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
- | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
- |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
-                      __/ |                        
-                     |___/                         
+    ______                             ______            __
+   / ____/___ ________  __            /_  __/___  ____  / /
+  / __/ / __ `/ ___/ / / /  ______     / / / __ \/ __ \/ / 
+ / /___/ /_/ (__  ) /_/ /  /_____/    / / / /_/ / /_/ / /  
+/_____/\__,_/____/\__, /             /_/  \____/\____/_/   
+                 /____/                                    
 
-\033[93m[ \033[94m1 \033[93m] Start Leap
-\033[93m[ \033[94m2 \033[93m] Go to Menu
-\033[91m
+                   \033[94mCreated By Toxic-Omega
+
+\033[32m[ \033[31m1 \033[32m] Start Leap
+\033[32m[ \033[31m2 \033[32m] Go to Menu
 """)
         print(" ")
         rmenu = input(">> ")
@@ -244,6 +236,7 @@ while loop:
             os.system("exit")
             os.system("clear")
             time.sleep(2)
+            os.system("ls")
             os.system("clear")
             os.system("./start-leap.sh")
         if rmenu == "2":
@@ -255,7 +248,7 @@ while loop:
     elif what == "6":
         os.system("clear")
         print(" ")
-        print("\033[92mInstalling Tumbleweed...")
+        print("\033[32m[\033[31m*\033[32m] Installing Tumbleweed...")
         print(" ")
         time.sleep(4)
         os.system("cd /data/data/com.termux/files/home/")
@@ -263,29 +256,29 @@ while loop:
         os.system("cd /data/data/com.termux/files/home/")
         os.system("clear")
         print(" ")
-        print("\033[92mTumbleweed sucesfully installed...")
+        print("\033[32m[\033[31m*\033[32m] Tumbleweed sucesfully installed...")
         print(" ")
         time.sleep(3)
-        print("""\033[92m
+        print("""\033[31m
     
-  ______                     _______             _ 
- |  ____|                   |__   __|           | |
- | |__    __ _  ___  _   _     | |  ___    ___  | |
- |  __|  / _` |/ __|| | | |    | | / _ \  / _ \ | |
- | |____| (_| |\__ \| |_| |    | || (_) || (_) || |
- |______|\__,_||___/ \__, |    |_| \___/  \___/ |_|
-                      __/ |                        
-                     |___/                         
+    ______                             ______            __
+   / ____/___ ________  __            /_  __/___  ____  / /
+  / __/ / __ `/ ___/ / / /  ______     / / / __ \/ __ \/ / 
+ / /___/ /_/ (__  ) /_/ /  /_____/    / / / /_/ / /_/ / /  
+/_____/\__,_/____/\__, /             /_/  \____/\____/_/   
+                 /____/                                    
 
-\033[93m[ \033[94m1 \033[93m] Start Tumbleweed
-\033[93m[ \033[94m2 \033[93m] Go to Menu
-\033[91m
+                   \033[94mCreated By Toxic-Omega
+
+\033[32m[ \033[31m1 \033[32m] Start Tumbleweed
+\033[32m[ \033[31m2 \033[32m] Go to Menu
 """)
         print(" ")
         rmenu = input(">> ")
         if rmenu == "1":
             os.system("exit")
             time.sleep(2)
+            os.system("ls")
             os.system("clear")
             os.system("./start-tumbleweed.sh")
         if rmenu == "2":
@@ -297,67 +290,73 @@ while loop:
     elif what == "11":
         os.system("clear")
         print(" ")
-        print("\033[92mStarting Kali-Linux...")
+        print("\033[32m[\033[31m*\033[32m] Starting Kali-Linux...")
         print(" ")
         time.sleep(3)
+        os.system("ls")
         os.system("clear")
         os.system("./start-kali.sh")
 #------------------------------------------------------------------------------
     elif what == "22":
         os.system("clear")
         print(" ")
-        print("\033[92mStarting Ubuntu...")
+        print("\033[32m[\033[31m*\033[32m] Starting Ubuntu...")
         print(" ")
         time.sleep(3)
+        os.system("ls")
         os.system("clear")
         os.system("./start-ubuntu.sh")
 #------------------------------------------------------------------------------
     elif what == "33":
         os.system("clear")
         print(" ")
-        print("\033[92mStarting Debian...")
+        print("\033[32m[\033[31m*\033[32m] Starting Debian...")
         print(" ")
         time.sleep(3)
+        os.system("ls")
         os.system("clear")
         os.system("./start-debian.sh")
 #------------------------------------------------------------------------------
     elif what == "44":
         os.system("clear")
         print(" ")
-        print("\033[92mStarting Parrot...")
+        print("\033[32m[\033[31m*\033[32m] Starting Parrot...")
         print(" ")
         time.sleep(3)
+        os.system("ls")
         os.system("clear")
         os.system("./start-parrot.sh")
 #------------------------------------------------------------------------------
     elif what == "55":
         os.system("clear")
         print(" ")
-        print("\033[92mStarting Leap...")
+        print("\033[32m[\033[31m*\033[32m] Starting Leap...")
         print(" ")
         time.sleep(3)
+        os.system("ls")
         os.system("clear")
         os.system("./start-leap.sh")
 #------------------------------------------------------------------------------
     elif what == "66":
         os.system("clear")
         print(" ")
-        print("\033[92mStarting Tumbleweed...")
+        print("\033[32m[\033[31m*\033[32m] Starting Tumbleweed...")
         print(" ")
         time.sleep(3)
+        os.system("ls")
         os.system("clear")
         os.system("./start-tumbleweed.sh")
 #------------------------------------------------------------------------------
-    elif what == "00":
+    elif what == "0":
         os.system("clear")
         print(" ")
-        print("\033[91mAre you sure you want to install all?  (y/n)")
+        print("\033[32m[\033[31m*\033[32m] Are you sure you want to install all? [y/n]")
         print(" ")
         rmenu = input(">> ")
         if rmenu == "y":
             os.system("clear")
             print(" ")
-            print("\033[92mThis will take long time...")
+            print("\033[32m[\033[31m*\033[32m] This will take long time...")
             print(" ")
             time.sleep(3)
             os.system("pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && bash kali.sh")
@@ -372,3 +371,13 @@ while loop:
             exit
         else:
             exit
+#------------------------------------------------------------------------------
+    elif what == "x":
+        os.system("clear")
+        os.system("ls")
+        print(" ")
+        print("Exiting...")
+        print(" ")
+        exit
+        break
+#------------------------------------------------------------------------------
