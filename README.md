@@ -12,7 +12,6 @@ __________________________________________________________
 __________________________________________________________
 <br>
 <p align="center">
-<img width="53%" src="https://github.com/Toxic-Omega/Easy-Tool/blob/master/Screenshot/Screenshot_20200110-123617_Termux.jpg"/>
-<img width="38%" src=""/>
+<img width="53%" src="https://github.com/Toxic-Omega/Easy-Tool/blob/master/Screenshot/Screenshot_20200204-145232_Termux.jpg"/>
 </p>
 
