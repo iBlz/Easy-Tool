@@ -373,8 +373,8 @@ while loop:
             exit
 #------------------------------------------------------------------------------
     elif what == "x":
-        os.system("clear")
         os.system("ls")
+        os.system("clear")
         print(" ")
         print("Exiting...")
         print(" ")
